@@ -1,0 +1,277 @@
+/* Reset-css */
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    top: 0px;
+    
+}
+#navbar::before{
+    content:"";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+}
+
+/* navigation bar: logo and images */
+#logo{
+    margin: 13px 16px
+}
+#logo img{
+    margin: 0px 14px;
+    height: 58px;
+}
+#logo p{
+    color: white;
+}
+
+
+/* navigation bar: list-styling */
+
+#navbar ul{
+    display: flex;
+}
+
+.item{
+    list-style: none;
+    font-size:1.4rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 7px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 0.8s;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+ 
+}
+
+/*home:  Section styleing */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 396px;
+    
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background:url(../images/background_images/image.jpg) no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+/* service section */
+#services{
+    margin: 32px;
+    display: flex;
+}
+#services .box{
+    border: 4px solid brown;
+    padding: 37px 39px;
+    margin: 13px;
+    border-radius: 23px;
+    background-color: #d7dce2;
+    transition: all;
+    transition-duration: .8s;
+}
+#services .box:hover{
+    background-color: #e6edf583;
+}
+#services .box img{
+    height: 188px;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+/* our top partners section*/
+#about{
+    height: 400px;
+    /* border: 2px solid red; */
+}
+#about::before{
+    content:"";
+    position: absolute;
+    background: url('../images/background_images/bg3.jpg')no-repeat center center/cover;
+    width :100%;
+    height: 400px;
+    z-index: -1;
+    opacity: .92;
+    
+}
+#partner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+    margin-top: 37px;
+}
+
+#partner img{
+    height: 100px;
+    width: 124px;
+}    
+#partner .box{
+    padding: 34px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+    height: 670px;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 670px;
+    z-index: -1;
+    /* opacity: .82; */
+    
+    background: url('../images/background_images/contact_us.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box input{
+    width: 100%;
+    padding: 6px 8px;
+    background-color: rgba(255, 255, 255, 0.123);
+    font-size: 1.2rem;
+    color: black;
+    border-radius: 23px;
+    border: 4px solid black;
+    margin: 0px;
+}
+#contact-box input[type=submit]{
+    width: 102%;
+    transition: all;
+    transition-duration: .8s;
+    cursor: pointer;
+   
+}
+#contact-box input:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.473);
+    transition: all;
+    transition-duration: .8s;
+}
+#contact-box textarea:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.473);
+    transition-duration: .8s;
+}
+#contact-box input[type=submit]:hover{
+    background-color: rgba(0, 0, 0, 0.075);
+}
+#contact-box input::placeholder{
+    color:rgb(0, 0, 0);
+    padding: 0px 4px;
+}
+
+
+#contact-box textarea{
+    width: 100%;
+    padding: 6px 12px;
+    background-color: rgba(255, 255, 255, 0.123);
+    font-size: 1.2rem;
+    margin: 0px;
+    color: black;
+    border-radius: 23px;
+    border: 4px solid black;
+}
+#contact-box textarea::placeholder{
+    color: black;
+    padding: 0px 4px;
+}
+#contact-box label{
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+/* footer */
+footer{
+    background-color: rgb(4, 4, 44);
+    color: white;
+    padding: 8px 10px;
+}
+/* utility classes */
+.headingprimary{
+    
+    font-size: 2.8rem;
+    /* font-family: 'Roboto Mono', monospace; */
+}
+.homepara{
+    
+    font-size: 1.4rem;
+}
+.white{
+    color: white;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 16px 46px;
+    margin: 13px;
+    border-radius: 28px;
+    color: white;
+    transition: all;
+    transition-duration: .8s;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+.btn:hover{
+
+    background-color: rgba(0, 0, 0, 0.13);
+}
+.checked{
+    color: orange;
+}
+.font{
+    font-family: 'Farro', sans-serif;
+}
+.special{
+    padding: 37px;
+}
+.compname{
+    font-size: .87rem;
+}

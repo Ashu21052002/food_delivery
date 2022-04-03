@@ -1,0 +1,94 @@
+/* !This is for phone  */
+/* navigationbar */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding:0px 7px;
+}
+/* home menu */
+#home{
+    height: 427px;
+    padding: 0px 20px
+}
+#home::before{
+    height: 560px;
+
+}
+/* services */
+#services{
+    flex-direction: column;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#services .box img {
+    height: 157px;
+    width: 157px;
+    margin: auto;
+    display: block;
+}
+#services .box{
+    padding: 4px 12px;
+    margin: 13px;
+    border-radius: 23px;
+}
+/* about */
+#partner{
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+    margin-top: 9px;
+}
+#partner .box {
+    padding: 11px 20px;
+}
+#about img{
+    width: 56px;
+    height: 70px;
+}
+/* contact */
+#contact-box label {
+    font-size: 1.2rem;
+}
+#contact-box input {
+    font-size: 0.78rem;
+    width: 115%;
+    border: 3px solid black;
+   
+}
+#contact-box input[type=submit] {
+    width: 123%;
+}
+#contact-box textarea {
+    font-size: 0.78rem;
+    width: 115%;
+    padding: 6px 8px;
+    border: 3px solid black;
+}
+#contact{
+    height: 505px;
+}
+#contact::before{
+    height: 505px;
+}
+/* utilities */
+.homepara{
+    font-size: 0.98rem;
+}
+.headingprimary{
+    font-size: 1.4rem;
+}
+.btn{
+    font-size: .92rem;
+    padding: 4px 4px;
+}
+
+    .special {
+        padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+#para{
+    font-size: .5rem;
+}
