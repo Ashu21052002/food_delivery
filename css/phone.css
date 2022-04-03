@@ -79,8 +79,12 @@
     font-size: 1.4rem;
 }
 .btn{
-    font-size: .92rem;
+    
     padding: 4px 4px;
+}
+
+.btn a{
+    font-size: .92rem;
 }
 
     .special {

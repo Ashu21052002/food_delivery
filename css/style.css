@@ -275,3 +275,8 @@ footer{
 .compname{
     font-size: .87rem;
 }
+.btn a{
+    text-decoration: none;
+    font-style: none;
+    color: white;
+}
